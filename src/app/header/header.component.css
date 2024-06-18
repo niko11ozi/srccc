@@ -1,0 +1,144 @@
+.title {
+    display: flex;
+    height: 30px;
+    background-color: rgba(255,202,202,255);
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+.contact div{
+    display: flex;
+
+
+}
+
+.contact img {
+    height: 15px;
+    width: 15px;
+}
+
+.contact p {
+    font-size: 10px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.adress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+}
+
+.adress img {
+    height: 15px;
+    width: 15px;
+}
+
+.adress p {
+    font-size: 10px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo img {
+    width: 35px;
+    height: 45px;
+    ;
+}
+
+.logo p {
+    color: rgb(228, 143, 157);
+    font-weight: 800;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.search-container {
+    display: flex;
+    height: 30px;
+    gap: 10px;
+
+}
+
+.search-container input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 250px;
+    background-color: rgb(253, 247, 248);
+}
+
+.search_icon img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+
+
+}
+
+.search_icon {
+    height: 30px;
+    width: 30px;
+    background-color: pink;
+    border-radius: 50%;
+    text-align: center;
+    /* align-content: center; */
+
+}
+
+.search_icon:hover {
+    background-color: rgb(228, 143, 157);
+    ;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.account p{
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.fav {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.fav img {
+    width: 15px;
+    height: 15px;
+}
+.fav p{
+    margin: 0 auto;
+}
+
+.line {
+    border-left: 1px solid grey;
+    height: 15px;
+}
+

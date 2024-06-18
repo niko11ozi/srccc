@@ -1,0 +1,61 @@
+<div class="cover">
+    <div class="cover-text">
+        <p>მ ო დ ი </p>
+        <p> ე რ თ ა დ </p>
+        <p>ვ ი თ ა მ ა შ ო თ </p>
+    </div>
+    <div class="middle">
+        <img
+            src="https://png.pngtree.com/png-vector/20220520/ourmid/pngtree-hand-drawn-vector-kids-icon-boy-and-girl-png-image_4673733.png">
+    </div>
+    <div class="discount">
+
+        <div class="discount-div">
+            <img src="https://static.thenounproject.com/png/958287-200.png">
+            <p>25% ფასდაკლება შერჩეულ პროდუქციაზე</p>
+        </div>
+        <div class="discount-div">
+            <img src="https://static.thenounproject.com/png/958287-200.png">
+            <p>უფასო ტრანსპორტირება</p>
+        </div>
+
+
+    </div>
+    <div class="shop">
+        <button (click)="salesProd()">ფასდაკლებული სათამაშოები</button>
+    </div>
+</div>
+
+
+<div class="search-container">
+    <P>მოძებნე სათამაშო</P>
+    <div class="search-container-child">
+        <input type="text" [(ngModel)]="searchword" (keyup)="filter()">
+        <div class="search_icon">
+            <img class="search" src="https://cdn-icons-png.freepik.com/256/711/711319.png?semt=ais_hybrid">
+        </div>
+    </div>
+    
+</div>
+
+
+<section>
+    <app-card *ngFor="let photo of filteredphotos" [photo]="photo"></app-card>
+</section>
+
+
+
+
+<div class="fields">
+    <div class="fields-title">
+        <h1>შეარჩიე სასურველი კატეგორია </h1>
+    </div>
+    <div class="fields_items">
+        <a routerLink="/dolls">თოჯინები</a>
+        <a routerLink="/developmental">განმავითარებელი</a>
+        <a routerLink="/figures">ფიგურები</a>
+        <a routerLink="/toys">რბილი სათამაშოები</a>
+        <a routerLink="/cars">ავტომობილები</a>
+    </div>
+
+</div>

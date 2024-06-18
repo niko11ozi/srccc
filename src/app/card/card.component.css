@@ -1,0 +1,108 @@
+.card{
+    max-width:300px;
+    border:3px solid rgb(228, 143, 157);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    height: 450px;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card-photo img{
+    width:100%;
+    max-height: 250px;
+    object-fit: contain;
+
+}
+.card-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap:20px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+
+}
+h4{
+    font-size: 20px;
+    margin: 10px;
+    
+}
+
+.sale{
+    display: flex;
+    gap:5px;
+    align-items: center;
+}
+.sale-btn{
+    /* border:3px solid red;  */
+    border-radius: 5px;
+    padding:10px;
+    color:black;
+    font-size: 15px;
+    /* background-color: red; */
+}
+.price{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.price-p{
+    font-weight: 800;
+    font-size: 24px;
+    margin: 0;
+}
+.old{
+    font-size:20px;
+    font-weight: 100;
+    font-weight: 400;
+text-decoration: line-through;
+}
+.fav{
+    font-size: 10px;
+    border-style: double;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(245, 204, 211);
+}
+.fav:hover{
+    background-color: rgb(206, 147, 157) ;
+}
+.sale-card{
+    background-image:url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0nlZ1I5b1GsiuS_emFuNetU0s9HoA8qKfQ&usqp=CAU');
+    
+
+}
+.sale{
+    width:80px;
+    height: 80px;
+    position: absolute;
+ 
+}
+.main{
+    width:50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+}
+.sale-container{
+    display: flex;
+}
+
+@media screen and (max-width:1200px){
+    .price{
+        display:flex;
+        flex-direction: column;
+    }
+    .card{
+        height:500px;
+    }
+
+}

@@ -1,0 +1,29 @@
+<div class="card">
+    <div class="sale">
+        <div class=main [ngClass]="photo.sale ?'sale-card':''  ">
+        </div>
+    </div>
+    <div class="card-photo">
+        <img [src]="photo.imgSrc" alt="">
+    </div>
+    <div class="card-info">
+        <div class="title">
+            <h4>{{photo.name}}</h4>
+        </div>
+        
+        <div class="price">
+            <p class='price-p'*ngIf="photo.sale">₾ {{photo.price*0.75}}</p>
+            <p class="old" *ngIf="photo.sale"> {{photo.price}}</p>
+
+            <p class='price-p' *ngIf="!photo.sale">₾ {{photo.price}}</p>
+
+            <button (click)='incre()'class="fav">კალათაში დამატება</button>
+        </div>
+        <div>
+            <a [routerLink]=" ['/details', photo.id]">See more</a>
+
+        </div>
+       
+    
+    </div>
+</div>

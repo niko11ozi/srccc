@@ -1,0 +1,218 @@
+.cover {
+    width: 100%;
+    height: 500px;
+    background-color: rgba(255, 202, 202, 255);
+    background-image: url(https://storage.ko-fi.com/cdn/useruploads/display/70c7c15a-46c7-4935-b05b-268c6b044bda_teddybear2.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+@font-face {
+    font-family: ertoba;
+    src: url('../../assets/DM-Medea.ttf')
+}
+
+.cover-text {
+    font-family: ertoba;
+    font-size: 24px;
+    display: flex;
+    gap: 60px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.discount {
+    display: flex;
+    font-family: ertoba;
+    margin: 0 15px;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+.discount-offer {
+    display: flex;
+}
+
+.discount-div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.discount-div img {
+    width: 20px;
+    height: 20px;
+}
+
+.shop button {
+    background-color: rgb(228, 143, 157);
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 30px 0 20px 15px;
+    font-family: ertoba;
+    cursor: pointer;
+}
+
+.shop button:hover {
+    background-color: rgb(182, 114, 125);
+
+}
+
+.middle {
+    position: absolute;
+    align-self: center;
+    margin-top: 70px;
+}
+
+/* კარუსელი */
+
+.fields {
+    margin: 100px auto;
+
+}
+
+.fields-title h1 {
+
+    text-align: center;
+    font-family: ertoba;
+    font-size: 30px;
+}
+
+.fields_items {
+    margin: 70px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    max-width: 1000px;
+
+}
+.fields_items a{
+    background-color: rgb(228, 143, 157);
+    padding: 20px;
+    border-radius: 15px;
+    color:black;
+    cursor: pointer;
+    font-family: ertoba;
+}
+.fields_items a:hover {
+    background-color: rgb(182, 114, 125);
+
+}
+
+/* cards */
+
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:30px;
+    max-width: 1200px;
+    margin:auto;
+    margin-top: 120px;
+}
+
+
+.search-container {
+    display: flex;
+    height: 30px;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+justify-content: center;
+align-content: center;
+align-items: center;
+justify-items: center;
+background-color:  rgba(255, 202, 202, 255);
+padding: 50px;
+flex-direction: column;
+}
+.search-container p{
+    font-family: ertoba;
+
+}
+.search-container-child{
+    display: flex;
+    gap:10px
+}
+.search-container input {
+    border-radius: 5px;
+    border: 1px solid grey;
+    width: 250px;
+    background-color: rgb(253, 247, 248);
+}
+
+.search_icon img {
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    margin: 0 auto;
+
+
+}
+
+.search_icon {
+    height: 30px;
+    width: 30px;
+    background-color: rgb(228, 143, 157);
+    border-radius: 50%;
+    text-align: center;
+    /* align-content: center; */
+
+}
+
+.search_icon:hover {
+    background-color: rgb(228, 143, 157);
+    ;
+}
+@media screen and (max-width:1200px){
+    .middle{
+        display:none;
+    }
+    section{
+        grid-template-columns:repeat(3, 1fr);
+    }
+
+}
+
+@media screen and (max-width:900px){
+    .discount-div p{
+        font-size: 10px;
+    }
+    .shop button{
+        font-size: 10px;
+    }
+    .cover-text p{
+        font-size: 15px;
+        
+    }
+    .cover-text{
+        gap:15px;
+    }
+    section{
+        grid-template-columns:repeat(2, 1fr);
+        margin: auto;
+    }
+    .fields_items{
+        display: flex;
+        flex-direction: column;
+    }
+    .fields_items a{
+        text-align: center;
+    }
+}
+@media screen and (max-width:700px){
+ 
+    section{
+        grid-template-columns:repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+    }
+}
